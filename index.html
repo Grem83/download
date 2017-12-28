@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>7Zip Mac : Application de compression et décompression de fichiers pour macOS</title>
+  <meta name="description" content="Faciliter la compression et décompression de vos fichiers Zip, RAR, 7-zip, Tar, Gzip et Bzip2 sur macOS grâce à la meilleure application gratuite.">
+  <link rel="canonical" href="http://www.7zipmac.fr/" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/style.css" crossorigin="anonymous">
@@ -13,10 +16,22 @@
 <body>
 
   <!--NAV-->
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md bg-light sticky-top">
 
     <!--NAVBAR BRAND-->
-    <a class="navbar-brand text-dark" href="#"><img class="mr-2" src="logo.svg"><span class="h1">VLC media player</span></a>
+    <a id="navBrand"><img><span></span></a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#telecharger">Télécharger</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#installer">Installer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#utiliser">Utiliser</a>
+      </li>
+    </ul>
 
   </nav>
 
@@ -28,31 +43,298 @@
       <div class="container">
         <div class="d-inline-flex">
 
-          <div class="text-center col-2 mr-5">
-            <a href="apps/vlc-2.2.8.dmg" data-toggle="tooltip" data-placement="bottom" title="Télécharger VLC"><img width="160px" src="components/jumbotron/telecharger-vlc.svg"></a>
+          <div class="text-center col-2 mr-5 p-0">
+            <a href="apps/TheUnarchiver3.11.1.zip"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               title="Télécharger le désarchiveur">
+              <img width="185px" src="components/jumbotron/telecharger-7zip-mac.svg">
+            </a>
           </div>
 
           <div class="">
-            <a href="apps/vlc-2.2.8.dmg" data-toggle="tooltip" data-placement="bottom" title="Télécharger VLC">
-              <h1 class="h1">Lecteur multimédia open source pour Mac OS</h1>
+            <a href="apps/TheUnarchiver3.11.1.zip"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               title="Télécharger le désarchiveur">
+              <h1 class="h2">Application de compression et décompression pour macOS</h1>
             </a>
             <img width="200px" src="components/jumbotron/stars.svg">
-            <p class="mt-4 h4">VLC media player est le meilleur lecteur multimédia gratuit pour <strong>lire vos film ou écouter votre musique</strong>.
-              Parmis les premières applications à télécharger sur votre ordinateur <strong>Mac OS</strong>.</p>
+            <p class="text-secondary d-inline-flex ml-3">79 Personnes ont téléchargées cette application aujourd'hui</p>
+            <p class="mt-4 h4">
+              Le désarchiveur gratuit le plus complet et puissant pour compresser et décompresser vos fichiers
+              <strong>Zip, RAR, 7-zip, Tar, Gzip et Bzip2</strong>.
+              Parmis les premières applications à installer sur votre ordinateur
+              <strong>macOS</strong>.
+            </p>
           </div>
 
         </div>
 
-        <p><a class="btn btn-primary btn-lg" href="apps/vlc-2.2.8.dmg" role="button">Télécharger VLC »</a></p>
+        <p><a class="btn btn-success btn-block btn-lg mt-5" href="apps/TheUnarchiver3.11.1.zip" role="button">Télécharger »</a></p>
 
       </div>
+    </div>
+
+    <!--TUTO-->
+    <div class="container d-flex tuto">
+      <div class="col-8">
+        <div id="telecharger" class="card mb-4">
+          <h2 class="card-header">
+            Télécharger
+          </h2>
+          <div class="card-block p-4">
+            <p class="card-text mt-3">
+              Cliquer sur le lien suivant pour télécharger l'application désarchiveur pour macOS.
+            </p>
+            <a href="apps/TheUnarchiver3.11.1.zip" class="">
+              Télécharger désarchiveur pour macOS
+            </a>
+          </div>
+        </div>
+
+        <div id="installer" class="card mb-4">
+          <h2 class="card-header">
+            Installer
+          </h2>
+          <div class="card-block p-4">
+            <h3 class="h4 mt-3">
+              Double cliquer sur le fichier TheUnarchiver
+            </h3>
+            <p class="card-text mt-3">
+              Pour dézipper l'application.
+            </p>
+
+            <!-- modal01 -->
+            <a type="button" data-toggle="modal" data-target="#Modal01">
+              <img src="components/tuto/telecharger-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/telecharger-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <p class="card-text mt-3">
+              Une nouvelle icon apparait, c'est votre désarchiveur.
+            </p>
+
+            <!-- modal02 -->
+            <a type="button" data-toggle="modal" data-target="#Modal02">
+              <img src="components/tuto/installer-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/installer-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="h4 mt-3">
+              Déplacer l'application vers votre dossier d'applications
+            </h3>
+            <p class="card-text mt-3">
+              Pour permettre de rester organisé et de ne pas perdre une application en supprimant ses téléchargements.
+            </p>
+
+            <!-- modal03 -->
+            <a type="button" data-toggle="modal" data-target="#Modal03">
+              <img src="components/tuto/deplacer-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/deplacer-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="utiliser" class="card mb-4">
+          <h2 class="card-header">
+            Utiliser
+          </h2>
+          <div class="card-block p-4">
+
+            <h3 class="h4 mt-3">
+              Ouvrir l'application
+            </h3>
+            <p class="card-text mt-3">
+              Double cliquer sur l'application.
+            </p>
+
+            <!-- modal04 -->
+            <a type="button" data-toggle="modal" data-target="#Modal04">
+              <img src="components/tuto/ouvrir-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/ouvrir-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="card-text mt-3">
+              Puis valider en cliquant sur le bouton <strong>Ouvrir</strong>.
+            </p>
+
+            <!-- modal05 -->
+            <a type="button" data-toggle="modal" data-target="#Modal05">
+              <img src="components/tuto/valider-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal05" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/valider-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="card-text mt-3">
+              Une fenêtre s'ouvre dans laquelle il est possible de configurer les <strong>Formats d'archive</strong> necessaires,
+              de spécifier les options pour l'<strong>Extraction</strong>
+              et enfin de régler des paramêtres avancés dans l'onglet <strong>Avancé</strong>.
+            </p>
+
+            <!-- modal06 -->
+            <a type="button" data-toggle="modal" data-target="#Modal06">
+              <img src="components/tuto/application-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal06" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/application-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="h4 mt-3">
+              Décompresser un fichier
+            </h3>
+            <p class="card-text mt-3">
+              Cliquer avec le clic droit sur votre fichier compressé, puis sur <strong>Ouvrir avec</strong> et enfin sur <strong>The Unarchiver</strong>.
+            </p>
+            <p class="card-text mt-3">
+              Par défaut le fichier décompressé apparait dans le même dossier.
+            </p>
+
+            <!-- modal07 -->
+            <a type="button" data-toggle="modal" data-target="#Modal07">
+              <img src="components/tuto/decompresser-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal07" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/decompresser-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="h4 mt-3">
+              Compresser un fichier
+            </h3>
+            <p class="card-text mt-3">
+              Cliquer avec le clic droit sur votre fichier à compresser puis sur
+              <strong>Compresser " The Unarchiver "</strong> et l'application compresse et affiche votre fiché compressé dans le même dossier.
+            </p>
+
+            <!-- modal08 -->
+            <a type="button" data-toggle="modal" data-target="#Modal08">
+              <img src="components/tuto/compresser-7zip-macOS.jpg">
+            </a>
+            <div class="modal fade" id="Modal08" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Taille réelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="components/tuto/compresser-7zip-macOS.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <img class="mb-4" src="components/adsense/test-adsense02.png">
+        <img src="components/adsense/test-adsense01.jpg">
+      </div>
+
     </div>
 
   </main>
 
   <!--FOOTER-->
   <footer class="container">
-    <p>© VLC 2018</p>
+    <p>©7Zip 2018</p>
   </footer>
 
   <script src="assets/style.min.js" crossorigin="anonymous"></script>

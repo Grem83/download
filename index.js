@@ -1,13 +1,12 @@
 // IMPORT
 import 'jquery';
-import 'bootstrap';
 import 'popper.js';
-
-require('bootstrap');
+import 'bootstrap';
 
 // REQUIRE INDEX
 require('./index.scss');
 
 // REQUIRE BLOCK
-require('./components/logo/logo.js');
+require('./components/navBrand/navBrand');
+require('./node_modules/bootstrap/dist/js/bootstrap.js');
 

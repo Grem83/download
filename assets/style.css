@@ -5866,6 +5866,16 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 .navbar-brand img {
-  width: 75px; }
+  width: 30px; }
+
+.navbar-brand .h1 {
+  vertical-align: middle; }
+
+.tuto a img {
+  max-width: 100%;
+  cursor: pointer; }
+
+.modal-dialog {
+  max-width: fit-content; }
 
 /*# sourceMappingURL=style.css.map*/
