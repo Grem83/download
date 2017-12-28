@@ -5,8 +5,8 @@
   "repository": "localhost",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server",
     "build": "node_modules/.bin/webpack-dev-server --content-base build/",
+    "start": "node_modules/.bin/webpack-dev-server",
     "watch": "node_modules/.bin/webpack --progress --colors --watch",
     "dev": "NODE_ENV=dev ./node_modules/.bin/webpack",
     "prod": "node_modules/.bin/webpack",
