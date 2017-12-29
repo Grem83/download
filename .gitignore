@@ -1,0 +1,14 @@
+
+
+# User-specific stuff:
+.idea/dictionaries
+.idea/**/workspace.xml
+.idea/**/deployment.xml
+.idea/dictionaries/grem.xml
+.idea/**/download.iml
+.idea/**/misc.xml
+.idea/**/modules.xml
+.idea/**/vcs.xml
+.idea/**/watcherTasks.xml
+
+node_modules/
