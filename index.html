@@ -57,38 +57,47 @@
   <!--MAIN-->
   <main role="main">
 
-    <!--JUMBOTRON-->
-    <div class="jumbotron">
+    <!--APPBANNER-->
+    <div id="appBanner">
       <div class="container">
-        <div class="d-inline-flex">
 
-          <div class="text-center col-2 mr-5 p-0">
+        <article>
+
+          <div class="text-center col-md-2 p-0">
             <a href="apps/TheUnarchiver3.11.1.zip"
                data-toggle="tooltip"
                data-placement="bottom"
                title="Télécharger le désarchiveur">
-              <img width="185px" src="components/jumbotron/telecharger-7zip-mac.svg">
+              <img src="components/jumbotron/telecharger-7zip-mac.svg">
             </a>
           </div>
 
-          <div class="">
-            <a href="apps/TheUnarchiver3.11.1.zip"
-               data-toggle="tooltip"
-               data-placement="bottom"
-               title="Télécharger le désarchiveur">
-              <h1 class="h2">Application de compression et décompression pour macOS</h1>
-            </a>
-            <img width="200px" src="components/jumbotron/stars.svg">
-            <p class="text-secondary d-inline-flex ml-3">79 Personnes ont téléchargées cette application aujourd'hui</p>
-            <p class="mt-4 h4">
+          <div class="col-md-10 pr-0">
+
+            <!--MAIN TITLE-->
+            <h1 class="h2 mb-3">Application de compression et décompression pour macOS</h1>
+
+            <div class="d-flex flex-wrap align-items-center">
+              <a href="apps/TheUnarchiver3.11.1.zip"
+                 data-toggle="tooltip"
+                 data-placement="bottom"
+                 title="Télécharger le désarchiveur">
+                <h3></h3>
+              </a>
+              <img class="col-2" src="components/jumbotron/stars.svg">
+              <p class="text-secondary d-inline-flex m-0">79 Personnes ont téléchargées cette application aujourd'hui</p>
+            </div>
+
+            <p class="mt-2 h4">
               Le désarchiveur gratuit le plus complet et puissant pour compresser et décompresser vos fichiers
               <strong>Zip, RAR, 7-zip, Tar, Gzip et Bzip2</strong>.
               Parmis les premières applications à installer sur votre ordinateur
               <strong>macOS</strong>.
             </p>
+
           </div>
 
-        </div>
+        </article>
 
         <p><a class="btn btn-success btn-block btn-lg mt-5" href="apps/TheUnarchiver3.11.1.zip" role="button">Télécharger »</a></p>
 
