@@ -3,7 +3,7 @@
 // PARAMETERS
 
 let classes =   'navbar-brand text-dark',
-    href =      '##',
+    href =      '#',
     siteName =  '7zipmac.fr',
     sNClasses = 'h4',
     iClasses =  'mr-2',
