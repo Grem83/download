@@ -1,25 +1,32 @@
-#<IfModule mod_expires.c>
-## Enable expirations
-#ExpiresActive On
-## Default directive
-#ExpiresDefault "access plus 1 month"
-## My favicon
-#ExpiresByType image/x-icon "access plus 1 year"
-## Images
-#ExpiresByType image/gif "access plus 1 month"
-#ExpiresByType image/png "access plus 1 month"
-#ExpiresByType image/jpg "access plus 1 month"
-#ExpiresByType image/jpeg "access plus 1 month"
-## Html
-#ExpiresByType text/html "access plus 1 month"
-## CSS
-#ExpiresByType text/css "access plus 1 month"
-## Javascript
-#ExpiresByType application/javascript "access plus 1 year"
-## Others
-#ExpiresByType application/x-shockwave-flash "access plus 1 month"
-#ExpiresByType application/pdf "access plus 1 month"
-#</IfModule>
+# ----------------------------------------------------------------------
+# Default Lang and Basic Security Behavior
+# ----------------------------------------------------------------------
+# X-Powered-By hidden by default nobody will notice if you're using PHP or ASP or whatever
+Header unset X-Powered-By
+# Set by default UTF-8 charset
+AddDefaultCharset UTF-8
+# ITALIAN language for this files, change it for your needs
+AddLanguage it-IT .html .htm .css .js
+# Set the default charset for every feed methods
+AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
+# ITALIAN timezone, change it for your needs
+SetEnv TZ Europe/Paris
+# Don not allow any pages to be framed - Defends against CSRF
+Header set X-Frame-Options SAMEORIGIN
+# Turn on IE8-IE9 XSS prevention tools
+Header set X-XSS-Protection "1; mode=block"
+# Only allow JavaScript from the same domain to be run.
+# Don not allow inline JavaScript to run.
+Header set X-Content-Security-Policy "allow 'self';"
+# Prevent mime based attacks
+Header set X-Content-Type-Options "nosniff"
+# Disable server sign
+ServerSignature Off
+# drop Range header when more than 5 ranges. CVE-2011-3192
+SetEnvIf Range (,.*?){5,} bad-range=1
+RequestHeader unset Range env=bad-range
+# LIMIT UPLOAD FILE SIZE TO PROTECT AGAINST DOS ATTACK. Bytes, 0-2147483647(2GB)
+LimitRequestBody 2147483647
 
 # ----------------------------------------------------------------------
 # Gzip compression
@@ -62,8 +69,7 @@
                                   text/xml
   </IfModule>
 </IfModule>
-#
-#
+
 # ----------------------------------------------------------------------
 # Expires headers (for better cache control)
 # ----------------------------------------------------------------------
