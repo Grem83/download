@@ -3,9 +3,9 @@
 // PARAMETERS
 
 let classes =   'navbar-brand text-dark',
-    href =      '##',
-    siteName =  '7z',
-    sNClasses = 'h1',
+    href =      '#',
+    siteName =  '7zipmac.fr',
+    sNClasses = 'h4',
     iClasses =  'mr-2',
     iSrc =      'components/navBrand/logo-7zip-macOS.svg'
 

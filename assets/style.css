@@ -5871,7 +5871,7 @@ a.text-dark:focus, a.text-dark:hover {
 .navbar-brand .h1 {
   vertical-align: middle; }
 
-.tuto a img {
+#appStep a img {
   max-width: 100%;
   cursor: pointer; }
 
